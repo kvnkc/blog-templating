@@ -12,14 +12,12 @@
         <div class="title"><h1>My Blog</h1></div>
            </div>
         <div class="content">
-            {% for blog_post in posts: %}
             <div class="card">
-                <h2>{{blog_post['title']}}</h2>
-                <p>{{blog_post['subtitle']}}</p>
+                <h1>{{post['title']}}</h2>
+                <h2>{{post['subtitle']}}</p>
+                <p>{{post['body']}}</p>
             </div>
-            {% endfor %}
-
-    </div>
+        </div>
 </div>
 </body>
 <footer>
